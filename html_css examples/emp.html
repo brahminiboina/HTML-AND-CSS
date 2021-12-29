@@ -1,0 +1,109 @@
+<html>
+	<head>
+		<title>
+			Employee details
+		</title>
+		<script type = "text/javascript" src = "Employee.js"></script>
+			<style>
+			
+				#first name{
+					font-family: "Lucida Console";  
+					color: blue;       
+			    }
+			    #lastname{   
+					font-family: "Lucida Console";  
+					color: purple;       
+			    }
+			    #phno{   
+					font-family: "Lucida Console";  
+					color: purple;       
+			    }
+			    #email{   
+					font-family: "Lucida Console";  
+					color: purple;       
+			    }
+				
+			    .container{
+					border: 5px outset black ;
+					text-align :center;
+					background-color : skyblue;
+					font-size :20px;
+					color : #330000 ;
+			    }<br>
+				body{
+				
+					
+					background-repeat: no-repeat;
+					background-size:100% 100%;
+					background-attachment:fixed;
+				}
+				
+		   </style>
+	</head>
+
+	<body background="https://miro.medium.com/max/800/1*7daI8rEnBjIhABNJwkSCZA.jpeg">
+		<center>
+			<h1><strong>Employee Registration</strong</h1>
+		</center><br>
+	
+		<div class="container">
+		<p>
+			First Name
+			<input id = "firstname" type="text" placeholder="Enter First Name">
+		
+		<p>
+			Last Name 
+			<input id = "lastname" type="text" placeholder = "Enter Last Name"><br>
+		
+		<p>
+			<label for="gender"><b>Gender:  </b></label>
+			
+			<input  id = "gender" type = "radio" value = "male">
+			<label for="male"><b>male:  </b></label>
+			
+			<input id = "gender" type = "radio" value = "female">
+			<label for="female"><b>female:  </b></label>
+			
+			<input id = "gender" type = "radio" value = "other">
+			<label for="other"><b>other:  </b></label>
+		
+		<p>
+			Phone Number 
+			<input id = "phno" type="text" placeholder = "Enter ph.no"><br>
+		
+		<p>
+			<label><b>Email </b></label>
+			<input id = "email" type="text" placeholder = "Enter email"><br>
+		
+		
+		<p>
+			<label for="text"><b>State</b></label>
+			<select id = "state" name = "State">
+			<option>select</option>
+			<option>AndhraPradesh</option>
+			<option>Telangana</option>
+			</select>
+	
+		<p>
+			<label for = "text"><b>Employee Address</b></label>
+			<textarea id = "Address" name="Address" rows = "3" colomns= "2">
+			</textarea>
+		
+		<P>
+			
+			<label><b>Employee Designation:</b></label>
+			<select id = "empdes" name = "Employee Designation">
+			<option>select</option>
+			<option>Java Developer</option>   
+			<option>Web Designer</option>
+			<option>Software Tester</option>
+			</select><br>
+		</p>
+			<input type = "submit" onclick = "return add()" value = "ADD">
+		</p>
+		
+		</div>
+		<div id = "tableinfo" value = "tableinfo"></div>
+	</body>
+	
+</html>

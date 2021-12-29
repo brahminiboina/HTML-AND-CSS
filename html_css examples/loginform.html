@@ -1,0 +1,118 @@
+<html>
+	<head>
+		<title>Login form</title>
+		<script>
+			function login(){
+	
+			var username = document.getElementById("username").value;
+			if(username == ""){
+			
+			alert("Please enter user name");
+			return false;
+			
+			}
+	
+			var password = document.getElementById("password").value;
+			if(password == ""){
+			
+			alert("Please enter your password");
+			return false;
+			
+			}
+			}
+	
+		</script>
+		<style>
+		h1 {
+			
+				color :black;
+				text-align: center;
+				font: bold 40px candara;
+				text-shadow: 0 1px #808d93,
+							-1px 0 #cdd2d5,
+							-1px 2px #808d93,
+							-2px 1px #cdd2d5,
+							-2px 3px #808d93,
+							-3px 2px #cdd2d5,
+							-3px 4px #808d93,
+							-4px 3px #cdd2d5,
+							-4px 5px #808d93,
+							-5px 4px #cdd2d5,
+							-5px 6px #808d93,
+							-6px 5px #cdd2d5,
+							-6px 7px #808d93,
+							-7px 6px #cdd2d5,
+							-7px 8px #808d93,
+							-8px 7px #cdd2d5;
+							
+			}
+			
+		.container {
+		
+			text-align : center;
+			
+			padding: 16px 30px;
+		}
+		
+		body {
+			background: #DCDDDF url(https://st2.depositphotos.com/2697407/8503/v/950/depositphotos_85035276-stock-illustration-paper-plane-background-with-airplane.jpg);
+			font: 13px/20px sans-serif ;
+			background-position:relative;
+			
+		}
+		a:hover{ 
+			text-decoration: underline;
+			text-align: center;				
+			font-size: 16px;
+		}
+		#login{
+			
+				background-color : grey;
+				padding: 10px 20px;
+				text-align: center;
+				border-radius: 5px;
+				
+			}
+		#login:hover{
+			
+				background-color:LightSteelBlue;
+				cursor: pointer;
+				color: black;
+				text-align: center;				
+				font-size: 15px;
+				
+			}
+		
+		
+		
+
+		</style>
+	</head>
+	<body>
+	<form action="">
+		<center>
+		<h1>Login-Form</h1>
+		</center>
+		<div class = "container">
+		<p>
+		User-Name
+		<input type= "text" name="UserName" id="username" autocapitalize="off" autocorrect="off" placeholder="Username">
+		<p>
+		Password
+		<input type= "password" name="Password" id="password" placeholder="password ">
+		
+		
+		<br>
+		<p>
+		<input id="login" type = "submit" onclick = "return login()" value="Log in">
+		<p>
+		
+		<a href="#">forgot password?</a>
+		<p>
+		New user?
+		<a href="file:///C:/Users/user/Desktop/BhanuProjects/Project1/register.html">Register here</a>
+		
+		</div>
+		</form>
+	</body>
+</html>

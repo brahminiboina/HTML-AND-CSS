@@ -1,0 +1,25 @@
+	<html>
+		<head>
+			<title>Table Creation</title>
+		</head>
+		<body>
+			<%if( approveVal.equals(rs.getInt("c_id")+"_approved")) {out.print("checked='checked'");}%>
+		</body>
+	</html><%/*
+                			String ck = rs.getInt("c_id")+"_approved";
+                			String[] names = request.getParameterValues("ck");
+                			List list = Arrays.asList(names);
+                			
+                			request.setAttribute("names", list);
+                			
+                			
+                	         
+                	        List<String> employees  = (List<String>)request.getAttribute("names");
+                	        for(String e: employees){*/
+                	         %>
+                	         
+                	            <td><%=e%></td>
+                	        
+                	         <% 
+                	            }
+                	            %>
