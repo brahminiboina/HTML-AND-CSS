@@ -1,0 +1,18 @@
+<!--how to get the list of table from database in html. -->
+
+<tr>
+  			<td align="right" width="40%">Source Table&nbsp;&nbsp; </td>
+  			<td width="50%"><select  name="source_table" id="source_table"  class="form-control" enabled onchange="myFunction()">
+  				<%
+					ps=con.prepareStatement("show tables from wipaydb ");
+					rs=ps.executeQuery();
+				%>
+				<option value="select">Select </option>
+				<%
+					while(rs.next()) { %>
+						<option value="<%=rs.getString("Tables_in_wipaydb") %>"> <%=rs.getString("Tables_in_wipaydb") %></option>
+				<% }
+				rs.close();rs=null;ps.close();ps=null;%>
+				</select>
+			</td>
+  		</tr>
